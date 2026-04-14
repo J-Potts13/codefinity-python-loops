@@ -8,12 +8,11 @@ while i < len(countries):
     if countries[i][0] != "S":
         i += 1
         continue
-    else:
-        selected.append(countries[i])
-        i += 1
+    selected.append(countries[i])
+    
     if len(selected) == 3:
         break
-    
+    i += 1
 
 # Testing
 print('First three countries starting with "S":', selected)
